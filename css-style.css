@@ -1,0 +1,162 @@
+p {
+   font-size:10px;
+   color:red;
+   font-family:Arial;
+   background-color:blue;
+   text-align:center;
+}
+
+h1 {
+   color: #8a2be2;
+
+   /* Default Font Families */
+   font-family: serif;
+   font-family: sans-serif;
+   font-family: cursive;
+
+   /* Will apply each font to h1 till one is supported */
+   font-family: Times, Verdana, Tahoma;
+}
+
+/* Table Styling */
+table {
+    border: 1px solid black;
+}
+
+td {
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+/* Hyperlink Styling */
+a {
+   color: #cc0000;
+
+   /* No Hyperlink Underline */
+   text-decoration: none;
+}
+
+/* Section (Division) Styling */
+div {
+    height: 50px;
+    width: 120px;
+    border-color: #6495ED;
+    background-color: #BCD2EE;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 5px;
+    text-align: center;
+
+    /* display attribute */
+    display: block;  /* Takes the the full width of webpage */
+    display: inline-block; /* Makes elementa block box, will allow other elements to sit next to it. */
+    display: inline; /* Sits in the same line as another with formatting it like a block. */
+    display: none; /* Makes element and its content disappear from page */
+
+    /* margin attribute */
+    /* The space around the element.  The larger the margin, the more space between our element
+       the elements around it. */
+    margin: auto;
+    margin: 1px 2px 3px 4px;  /* top right bottom left */
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    /* padding attribute */
+    /* The space between the content and the border. */
+    padding: 1px 2px 3px 4px;  /* top right bottom left */
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    /* content attribute */
+    /* The actual stuff in the box like <p>. */
+    content: ;
+
+    /* float attribute */
+    /* Tells where the element where to position against the others. */
+    float: right;
+
+    /* clear attribute */
+    /* Clears other elements on the page. */
+    clear: right;
+    clear: left;
+    clear: both;
+
+    /* Positioning */
+    /* All elements are initially defaulted to static. */
+    position: absolute; /* Position itself in relation to its parent element, if the elemnt has no parent element, it's static. */
+    position: relative; /* Moves relative to where it has landed. */
+    position: fixed; /* Anchors an element to the browser window */
+
+    /* z-index */
+    /* A measure of importance.  The ihgher the z-index, the higher it will be stacked on the page. */
+    z-index: 1;
+}
+
+div div div h3 {
+    color: red;
+}
+
+/* Universal Selector */
+* {
+    border: 1px dashed #3A5FCD;
+}
+
+/* All nested <p>'s will be styed (does not include lists) */
+/* The more specific the CSS Style is, the higher precedence. */
+div > p {
+	color: #7AC5CD;
+}
+
+/* Classes */
+/* Classes are assigned to HTML elements, usually used to style multiple elemnts. */
+.square {
+    height: 100px;
+    width: 100px;
+}
+
+/* Applies CSS styling to only the <p> in square class */
+.square p {
+    height: 100px;
+    width: 100px;
+}
+
+/* IDs */
+/* IDs are used to style one element, which are also assigned to HTML elements. */
+#first {
+    height: 50px;
+}
+
+#second {
+    height: 100px;
+}
+
+/* Pseudo-Class Selector */
+/* This is used to access HTML items that are not part of the document tree. */
+a:hover {
+	color: #CC0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #008B45;
+}
+
+a:visited {
+    color: #EE9A00;
+}
+
+/* First Child */
+p:first-child {
+   color: red;
+}
+
+/* Nth Child (5th child this case) */
+p:nth-child(5) {
+    color: red;
+}
