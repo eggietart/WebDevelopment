@@ -3,7 +3,7 @@
 
 // "div" can be replaced with class or id
 $(document).ready(function() {
-   #("div").mouseenter(function() { // Senses if the mouse hovers over HTML element
+   $("div").mouseenter(function() { // Senses if the mouse hovers over HTML element
       $("div").fadeOut(1000); // Causes "div" to disappear
    });
 
