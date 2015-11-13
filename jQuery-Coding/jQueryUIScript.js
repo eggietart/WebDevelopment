@@ -5,7 +5,7 @@ $(document).ready(function() {
    });
 
    $('div').click(function() {
-      $('div').effect('bounce', {times:3}. 500); // Causes element to bounce
+      $('div').effect('bounce', {times:3}, 500); // Causes element to bounce
    });
 
    $('div').click(function() {

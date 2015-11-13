@@ -1,5 +1,5 @@
 // Retrieving the length of a string
-"Agatha".length
+"Agatha".length();
 
 // To create pop confirm boxes that gives options of "OK" and "Cancel
 confirm("I am ready to go.");
@@ -77,7 +77,7 @@ while(bool) {
 do {
     console.log("Less is more!");
     bool = false;
-} while(bool)
+} while(bool);
 
 // Checking whether the parameter is a not a number
 isNaN('berry'); // => true
@@ -142,7 +142,7 @@ var search = function(name) {
             return friends[key];
         }
     }
-}
+};
 
 // Custom Constructor Notation for Objects
 function Person(name,age) {
@@ -184,7 +184,7 @@ console.log( myObj.hasOwnProperty('name') ); // should print true
 // OOP
 function Dog (breed) {
   this.breed = breed;
-};
+}
 
 var buddy = new Dog("golden Retriever");
 Dog.prototype.bark = function() {
